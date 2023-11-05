@@ -1,0 +1,338 @@
+/*And here's the example CSS file (style.css):*/
+
+/* HTML tag selector */
+html {
+font-size: 16px;
+}
+
+/* ID selector */
+#name {
+width: 50%;
+padding: 8px;
+}
+
+/* Navbar styles */
+.navbar {
+height: 50px;
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+}
+.name{
+	margin-left: 20%;
+}
+.navbar ul {
+display: flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.navbar li {
+margin-right: 20px;
+}
+
+.navbar a {
+color: #fff;
+text-decoration: none;
+}
+
+
+.btn{
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	background: gray;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 20px;
+	transition: background 0.5s;
+}
+
+.btn:hover{
+	background: blue;
+
+}
+
+/* Home page */
+.header {
+background-image: url(images/original.jpg);
+background-size: cover;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+span{
+	color: white;
+}
+
+/*About us page */
+.services{
+        margin-top: 6%;
+	text-align: center;
+        background-color:limegreen;
+}
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #3498db;
+    font-size: 20px;
+    padding-bottom: 10px;
+    background-color:yellow;
+    margin-top: 40px;
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+.service{
+    display: inline-grid;
+    width: calc(100% /3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.service:hover{
+    background: gray;
+}
+.service i{
+    color: #3498db;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+.service h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+.service p{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media screen and (max-width: 800px){
+    .service{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .service{
+        width: 100%;
+    }
+}
+
+/* Services page*/
+.container{
+    padding: 10rem 7%;
+    margin-top: -100px;
+    backgound-color:purple;
+}
+.service_s{
+    margin-top:20px;
+    margin-bottom: 30px;
+    background-color:red;
+
+}
+.service_s h1{
+	display: inline-block;
+	text-align: center;
+	border-bottom: 4px solid #3498db;
+}
+.column-md-4{
+    margin: 50px;
+}
+.service-box{
+    box-shadow: 0 0 4px 0 #ffa709;
+    padding: 15px;
+    background: rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 15px #ffa709(0, 0, 0,.5);
+}
+.fa{
+    font-size: 40px !important;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Blog page */
+
+.our-gallery{
+    padding: 10rem 7%;
+    background-color:yellow;
+}
+.our-gallery h1{
+	display: inline-block;
+	border-bottom: 4px solid #3498db;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: -100%;
+}
+
+.main-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 15px;
+}
+.inner-gallery{
+    flex: 1 1 300px;
+}
+.inner-gallery img{
+    width: 300px;
+    height: 300px;
+    transition: .5s;
+}
+
+.inner-gallery img:hover{
+    transform: translateY(-10px);
+}
+.customer-review{
+    padding: 4rem 7%;
+    background-color:red;
+}
+.customer-review h1{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -10%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    -webkit-background-clip: text;
+    background-color:orange;
+}
+.main-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.inner-review{
+    flex: 1 1 250px;
+}
+.inner-review img{
+    width: 60px;
+    border-radius: 50px;
+}
+
+/* Contact  Page */
+.PersonalInfo h3{
+	display: inline-block;
+	border-bottom: 4px solid #3498db;
+    padding: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: black;
+    margin-top: -5%;
+    margin-left: 40px;
+    font-size: 2em;
+    background-color:pink;
+}
+.PersonalInfo{
+    position: relative;
+    min-height: 500px;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+    margin-top: 100px;
+    background-color:blue;
+}
+.PersonalInfo li{
+    flex-direction: column;
+    margin-left: 60px;
+}
+.PersonalInfo ul {
+    margin-left: 50px;
+    color: black;
+}
+.PersonalInfo h2 {
+    margin-left: 50px;
+    color: black;
+
+}
+
+.PersonalInfo.FindUs {
+    margin-left: 50px;
+    margin-top: 100px;
+    color: black;
+
+}
+.social-icon{
+	transition: color 0.2s;
+	text-decoration: none;
+	margin: 0 10px;
+	size: 20px;
+	align-items: center;
+	margin-right: 100px;
+}
+.social-icon:hover{
+	color: red;
+}
+
+
+.footer{
+	position: absolute;
+	background-color: #000;
+	width: 99%;
+	height: 10vh;
+	color: white;
+	margin-top: 20%;
+
+}
+.footer p{
+	text-align: center;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
